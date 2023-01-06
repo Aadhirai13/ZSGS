@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class Zsgs87b{
+
+    public static void main(String args[]){
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of terms: ");
+        int n = sc.nextInt();
+        char arr[] = new char[n];
+
+        for(int i=0;i<n;i++)
+            arr[i] = sc.next().charAt(0);
+        String str = new String(arr);
+        System.out.print(str);
+    }
+}
