@@ -5,10 +5,10 @@ import com.zsgs.cricketscoreboardmanagement.dto.Teams;
 
 import java.util.ArrayList;
 
-public class StartMatchController {
+public class StartMatchController implements StartMatchModelControllerCallBack , StartMatchViewControllerCallBack {
 
-    private StartMatchView startMatchView;
-    private StartMatchModel startMatchModel;
+    private StartMatchControllerViewCallBack startMatchView;
+    private StartMatchControllerModelCallBack startMatchModel;
     public StartMatchController(StartMatchView startMatchView) {
         startMatchModel = new StartMatchModel(this);
         this.startMatchView = startMatchView;

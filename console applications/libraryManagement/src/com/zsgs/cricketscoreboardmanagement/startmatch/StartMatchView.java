@@ -7,9 +7,9 @@ import com.zsgs.cricketscoreboardmanagement.playmatch.PlayMatchView;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class StartMatchView {
+public class StartMatchView implements StartMatchControllerViewCallBack {
     private Scanner scanner = new Scanner(System.in);
-    private StartMatchController startMatchController;
+    private StartMatchViewControllerCallBack startMatchController;
     private PlayMatchView playMatchView;
     private ScoreBoardDetails scoreBoardDetails = new ScoreBoardDetails();
 

@@ -1,8 +1,8 @@
 package com.zsgs.cricketscoreboardmanagement.playmatch;
 
-public class PlayMatchController {
-    private PlayMatchView playMatchView;
-    private PlayMatchModel playMatchModel;
+public class PlayMatchController implements PlayMatchModelControllerCallBack ,  {
+    private PlayMatchControllerViewCallBack playMatchView;
+    private PlayMatchControllerModelCallBack playMatchModel;
     public PlayMatchController(PlayMatchView playMatchView) {
         this.playMatchView = playMatchView;
         playMatchModel = new PlayMatchModel(this);

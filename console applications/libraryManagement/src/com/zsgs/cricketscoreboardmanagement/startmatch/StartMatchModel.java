@@ -6,8 +6,8 @@ import com.zsgs.cricketscoreboardmanagement.repository.ScoreBoardRepository;
 
 import java.util.ArrayList;
 
-public class StartMatchModel {
-    private StartMatchController startMatchController;
+public class StartMatchModel implements StartMatchControllerModelCallBack {
+    private StartMatchModelControllerCallBack startMatchController;
     public StartMatchModel(StartMatchController startMatchController) {
         this.startMatchController = startMatchController;
     }

@@ -4,9 +4,9 @@ import com.zsgs.cricketscoreboardmanagement.startmatch.StartMatchView;
 
 import java.util.Scanner;
 
-public class PlayMatchView {
+public class PlayMatchView implements PlayMatchControllerViewCallBack {
     private Scanner scanner = new Scanner(System.in);
-    private PlayMatchController playMatchController;
+    private PlayMatchViewControllerCallBack playMatchController;
     public PlayMatchView(){
         playMatchController = new PlayMatchController(this);
     }

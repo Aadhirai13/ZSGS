@@ -3,8 +3,8 @@ package com.zsgs.cricketscoreboardmanagement.playmatch;
 import com.zsgs.cricketscoreboardmanagement.dto.ScoreBoardDetails;
 import com.zsgs.cricketscoreboardmanagement.repository.ScoreBoardRepository;
 
-public class PlayMatchModel {
-    private PlayMatchController playMatchController;
+public class PlayMatchModel implements PlayMatchControllerModelCallBack , PlayMatchViewControllerCallBack {
+    private PlayMatchModelControllerCallBack playMatchController;
     public PlayMatchModel(PlayMatchController playMatchController) {
         this.playMatchController = playMatchController;
     }
