@@ -15,6 +15,7 @@ public class PlayMatchView {
         for(int currentOver = 0;currentOver < totalOvers;currentOver++){
             System.out.println("Over - " + (currentOver+1));
             giveRunForEachBall();
+            System.out.println("");
         }
     }
 
